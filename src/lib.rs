@@ -24,7 +24,7 @@ const ROUND_CONSTANTS: [u32; 64] = [
 /// big-endian value. The result is always a multiple of 64 bytes (512 bits).
 fn padding(message: &[u8]) -> Vec<u8> {
     let mut padded = message.to_vec();
-    padded.push(0b10000000); // 0x80
+    padded.push(0b1000_0000); // 0x80
     while padded.len() % 64 != 56 {
         padded.push(0x00);
     }
