@@ -28,6 +28,7 @@ For each 512-bit block:
 cargo run # compiles the code and then runs it
 cargo test # Runs all the tests
 cargo check # Checks if the code compiles, but does not compile it (really fast)
+cargo add --dev crate_name # Adds a dev dependency
 cargo build --release # Builds the release executable (and updates the Cargo.lock if not in sync)
 
 cargo fmt # Manually formats the code
